@@ -15,9 +15,22 @@ function Cards({ score, setScore, bestScore, setBestScore }) {
   const [images, setImages] = useState(primaryImgContainerArr);
   const [clickedImageIdList, setClickedImageIdList] = useState([]);
   const handleClick = (e) => {
-    setScore((prevScore) => {
-      return prevScore + 1;
+    const isImgAlreadyClicked = clickedImageIdList.find((imgId) => {
+      return imgId === e.target.id;
     });
+    if (isImgAlreadyClicked) {
+      setBestScore(score);
+      setScore(0);
+      setClickedImageIdList([]);
+      alert("finished");
+    } else {
+      setScore((prevScore) => {
+        return prevScore + 1;
+      });
+      setClickedImageIdList((prevList) => {
+        return [...prevList, e.target.id];
+      });
+    }
   };
   const imgList = images.map((imgArr) => {
     return (
