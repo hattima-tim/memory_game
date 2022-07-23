@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Cards from "./components/cards";
+import CardsLogic from "./components/cardsLogic";
 
 function App() {
   const [score, setScore] = useState(0);
@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <h1>Memory Card Game</h1>
-      <Cards
+      <CardsLogic
         score={score}
         setScore={setScore}
         bestScore={bestScore}
