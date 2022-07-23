@@ -1,6 +1,6 @@
 import { useState } from "react";
 import CardsLogic from "./components/cardsLogic";
-
+import "./App.css"
 function App() {
   const [score, setScore] = useState(0);
   const [bestScore, setBestScore] = useState(3);
