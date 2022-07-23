@@ -1,6 +1,8 @@
 import { useState } from "react";
 import primaryImgContainerArr from "../images";
-function Cards({ score, setScore, bestScore, setBestScore }) {
+import Cards from "./cards";
+function CardsLogic({ score, setScore, setBestScore }) {
+  
   const [images, setImages] = useState(primaryImgContainerArr);
   const [clickedImageIdList, setClickedImageIdList] = useState([]);
 
@@ -40,18 +42,7 @@ function Cards({ score, setScore, bestScore, setBestScore }) {
       setImages(shuffleArray);
     }
   };
-  const imgList = images.map((imgArr) => {
-    return (
-      <img
-        key={uniqid()}
-        id={imgArr[1]}
-        src={imgArr[0]}
-        alt=""
-        onClick={handleClick}
-      ></img>
-    );
-  });
-  return <div>{imgList}</div>;
+  return <Cards images={images} handleClick={handleClick} />;
 }
 
-export default Cards;
+export default CardsLogic;
