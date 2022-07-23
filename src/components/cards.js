@@ -1,8 +1,8 @@
 import "../cardStyle.css";
-function cards({ images }) {
+function cards({ images, handleClick }) {
   return (
     <div className="cards">
-      <div className="card">
+      <div className="card" onClick={handleClick}>
         <img src={images[0].imgSrc} id={images[0].id} alt="Avatar" />
         <div className="container">
           <h4>
@@ -12,7 +12,7 @@ function cards({ images }) {
         </div>
       </div>
 
-      <div className="card">
+      <div className="card" onClick={handleClick}>
         <img src={images[1].imgSrc} id={images[1].id} alt="Avatar" />
         <div className="container">
           <h4>
@@ -22,7 +22,7 @@ function cards({ images }) {
         </div>
       </div>
 
-      <div className="card">
+      <div className="card" onClick={handleClick}>
         <img src={images[2].imgSrc} id={images[2].id} alt="Avatar" />
         <div className="container">
           <h4>
@@ -32,7 +32,7 @@ function cards({ images }) {
         </div>
       </div>
 
-      <div className="card">
+      <div className="card" onClick={handleClick}>
         <img src={images[3].imgSrc} id={images[3].id} alt="Avatar" />
         <div className="container">
           <h4>
@@ -42,7 +42,7 @@ function cards({ images }) {
         </div>
       </div>
 
-      <div className="card">
+      <div className="card" onClick={handleClick}>
         <img src={images[4].imgSrc} id={images[4].id} alt="Avatar" />
         <div className="container">
           <h4>
@@ -52,7 +52,7 @@ function cards({ images }) {
         </div>
       </div>
 
-      <div className="card">
+      <div className="card" onClick={handleClick}>
         <img src={images[5].imgSrc} id={images[5].id} alt="Avatar" />
         <div className="container">
           <h4>
@@ -62,7 +62,7 @@ function cards({ images }) {
         </div>
       </div>
 
-      <div className="card">
+      <div className="card" onClick={handleClick}>
         <img src={images[6].imgSrc} id={images[6].id} alt="Avatar" />
         <div className="container">
           <h4>
@@ -72,7 +72,7 @@ function cards({ images }) {
         </div>
       </div>
 
-      <div className="card">
+      <div className="card" onClick={handleClick}>
         <img src={images[7].imgSrc} id={images[7].id} alt="Avatar" />
         <div className="container">
           <h4>
@@ -82,7 +82,7 @@ function cards({ images }) {
         </div>
       </div>
 
-      <div className="card">
+      <div className="card" onClick={handleClick}>
         <img src={images[8].imgSrc} id={images[8].id} alt="Avatar" />
         <div className="container">
           <h4>
@@ -92,7 +92,7 @@ function cards({ images }) {
         </div>
       </div>
 
-      <div className="card">
+      <div className="card" onClick={handleClick}>
         <img src={images[9].imgSrc} id={images[9].id} alt="Avatar" />
         <div className="container">
           <h4>
@@ -102,7 +102,7 @@ function cards({ images }) {
         </div>
       </div>
 
-      <div className="card">
+      <div className="card" onClick={handleClick}>
         <img src={images[10].imgSrc} id={images[10].id} alt="Avatar" />
         <div className="container">
           <h4>
@@ -112,7 +112,7 @@ function cards({ images }) {
         </div>
       </div>
 
-      <div className="card">
+      <div className="card" onClick={handleClick}>
         <img src={images[11].imgSrc} id={images[11].id} alt="Avatar" />
         <div className="container">
           <h4>
@@ -122,7 +122,7 @@ function cards({ images }) {
         </div>
       </div>
 
-      <div className="card">
+      <div className="card" onClick={handleClick}>
         <img src={images[12].imgSrc} id={images[12].id} alt="Avatar" />
         <div className="container">
           <h4>
@@ -132,7 +132,7 @@ function cards({ images }) {
         </div>
       </div>
 
-      <div className="card">
+      <div className="card" onClick={handleClick}>
         <img src={images[13].imgSrc} id={images[13].id} alt="Avatar" />
         <div className="container">
           <h4>
@@ -142,7 +142,7 @@ function cards({ images }) {
         </div>
       </div>
 
-      <div className="card">
+      <div className="card" onClick={handleClick}>
         <img src={images[14].imgSrc} id={images[14].id} alt="Avatar" />
         <div className="container">
           <h4>
@@ -152,7 +152,7 @@ function cards({ images }) {
         </div>
       </div>
 
-      <div className="card">
+      <div className="card" onClick={handleClick}>
         <img src={images[15].imgSrc} id={images[15].id} alt="Avatar" />
         <div className="container">
           <h4>
@@ -162,7 +162,7 @@ function cards({ images }) {
         </div>
       </div>
 
-      <div className="card">
+      <div className="card" onClick={handleClick}>
         <img src={images[16].imgSrc} id={images[16].id} alt="Avatar" />
         <div className="container">
           <h4>
@@ -172,7 +172,7 @@ function cards({ images }) {
         </div>
       </div>
 
-      <div className="card">
+      <div className="card" onClick={handleClick}>
         <img src={images[17].imgSrc} id={images[17].id} alt="Avatar" />
         <div className="container">
           <h4>
@@ -182,7 +182,7 @@ function cards({ images }) {
         </div>
       </div>
 
-      <div className="card">
+      <div className="card" onClick={handleClick}>
         <img src={images[18].imgSrc} id={images[18].id} alt="Avatar" />
         <div className="container">
           <h4>
@@ -192,7 +192,7 @@ function cards({ images }) {
         </div>
       </div>
 
-      <div className="card">
+      <div className="card" onClick={handleClick}>
         <img src={images[19].imgSrc} id={images[19].id} alt="Avatar" />
         <div className="container">
           <h4>
@@ -202,7 +202,7 @@ function cards({ images }) {
         </div>
       </div>
 
-      <div className="card">
+      <div className="card" onClick={handleClick}>
         <img src={images[20].imgSrc} id={images[20].id} alt="Avatar" />
         <div className="container">
           <h4>
@@ -212,7 +212,7 @@ function cards({ images }) {
         </div>
       </div>
 
-      <div className="card">
+      <div className="card" onClick={handleClick}>
         <img src={images[21].imgSrc} id={images[21].id} alt="Avatar" />
         <div className="container">
           <h4>
