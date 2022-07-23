@@ -39,7 +39,7 @@ function CardsLogic({ score, setScore, setBestScore }) {
       });
 
       const shuffledArray = shuffleArray(primaryImgContainerArr);
-      setImages(shuffleArray);
+      setImages(shuffledArray);
     }
   };
   return <Cards images={images} handleClick={handleClick} />;
