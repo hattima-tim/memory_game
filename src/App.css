@@ -1,3 +1,15 @@
-h1{
+body {
+  background: #022830;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+#root {
+  width: 700px;
+}
+
+h1 {
   text-align: center;
+  color: #f0eadd;
 }

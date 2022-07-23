@@ -2,8 +2,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 20px;
-  width:700px;
-  margin:0px auto;
+  justify-items: center;
 }
 
 .card {
@@ -23,7 +22,7 @@
   padding: 2px 16px;
 }
 
-h4{
+h4 {
   margin-top: 10px;
 }
 
