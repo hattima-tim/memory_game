@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import primaryImgContainerArr from "../images";
 import Cards from "./cards";
 function CardsLogic({ score, setScore, setBestScore }) {
@@ -25,10 +25,15 @@ function CardsLogic({ score, setScore, setBestScore }) {
     });
 
     if (isImgAlreadyClicked) {
-      setBestScore(score);
+      setBestScore((prevScore) => {
+        if (prevScore < score) {
+          return score;
+        }
+        return prevScore;
+      });
       setScore(0);
       setClickedImageIdList([]);
-      alert("finished");
+      alert("OOPS! You have clicked this image more than once! It's game over.");
     } else {
       setScore((prevScore) => {
         return prevScore + 1;
