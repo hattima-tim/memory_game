@@ -50,11 +50,12 @@ function CardsLogic({ score, setScore, setBestScore }) {
 
   useEffect(() => {
     if (score === 22) {
-      alert("Congratulations! You have successfully selected all the image!It's game OverconstrainedError.")
-      setBestScore(score);
       setScore(0)
+      alert("Congratulations! You have successfully selected all the image!It's game Over.")
+      setBestScore(score);
+      setClickedImageIdList([]);
     }
-  })
+  });
 
   return <Cards images={images} handleClick={handleClick} />;
 }
