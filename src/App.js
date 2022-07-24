@@ -7,6 +7,10 @@ function App() {
   return (
     <>
       <h1>Memory Card Game</h1>
+      <p id="game_info">
+        Get points by clicking on an image but don't click on any more than
+        once!
+      </p>
       <div className="score">
         <p>{`Score: ${score}`}</p>
         <p>Total Images: 22</p>
