@@ -47,6 +47,15 @@ function CardsLogic({ score, setScore, setBestScore }) {
       setImages(shuffledArray);
     }
   };
+
+  useEffect(() => {
+    if (score === 22) {
+      alert("Congratulations! You have successfully selected all the image!It's game OverconstrainedError.")
+      setBestScore(score);
+      setScore(0)
+    }
+  })
+
   return <Cards images={images} handleClick={handleClick} />;
 }
 
