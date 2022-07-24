@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import primaryImgContainerArr from "../images";
+import primaryImgContainerArr from "../modules/images";
 import Cards from "./cards";
 function CardsLogic({ score, setScore, setBestScore }) {
   
