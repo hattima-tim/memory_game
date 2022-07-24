@@ -13,3 +13,9 @@ h1 {
   text-align: center;
   color: #f0eadd;
 }
+
+.score {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
