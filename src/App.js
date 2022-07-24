@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <h1>Memory Card Game</h1>
-      <div class="score">
+      <div className="score">
         <p>{`Score: ${score}`}</p>
         <p>Total Images: 22</p>
         <p>{`Best Score: ${bestScore}`}</p>
