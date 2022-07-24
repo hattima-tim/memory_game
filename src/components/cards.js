@@ -1,4 +1,4 @@
-import "../cardStyle.css";
+import "../styles/cardStyle.css";
 function cards({ images, handleClick }) {
   return (
     <div className="cards">
