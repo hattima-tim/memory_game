@@ -8,7 +8,8 @@ Details for the assignment can be found [here](https://www.theodinproject.com/le
 Use it [here](https://hattima-tim.github.io/memory_game/).
 
 ## Demo
-![ezgif com-gif-maker_1_l1ad7s](https://user-images.githubusercontent.com/29122213/180787060-dd1fd05b-9fff-432b-8344-33c4cbb1bf2c.gif)
+
+https://user-images.githubusercontent.com/29122213/181066200-ce256794-2ab8-444f-b7fe-54ac004d4292.mp4
 
 ## Built With
 - [React](https://reactjs.org/)
